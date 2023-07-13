@@ -1,0 +1,68 @@
+/* 
+    У тебя font-family просто обрабатывает случай когда нет какого то шрифта, добавь какой то из предложенных в стилевой системе, а то дефолтный шрифт по ублюдски выглядит.
+    Убери auto из margin и оставь 0, оно там не надо.
+
+*/
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, Roboto, Helvetica, Verdana, sans-serif;
+}
+
+/* ----------- */
+
+/* Вот тут как раз лучше типа titleContent, хотя у хедера такие же стили, можешь универсальные группы которые используются много где, выностить в отдлельный класс и у тебя уже будет styled система, но это не обязательно сейчас, но помни что в работе такое точно будет */
+.header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 30px 0 0 64px;
+}
+
+/* Чуть больше конкретики можно, не упарываясь, типа titleTexts, это для других больше чем для тебя, для элементов внутри контейнера не так критично, а вот сам контейнер стоит более осмысленно называть */
+.texts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Хорошие классы для элементов хедера */
+.logo {
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.logoBold {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 25px;
+  width: 45%;
+}
+
+.descriptionLink {
+  text-decoration: none;
+  color: #2f80ed;
+  cursor: pointer;
+}
+
+.descriptionLink:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+}

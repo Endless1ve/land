@@ -1,42 +1,44 @@
-/* 
-    У тебя font-family просто обрабатывает случай когда нет какого то шрифта, добавь какой то из предложенных в стилевой системе, а то дефолтный шрифт по ублюдски выглядит.
-    Убери auto из margin и оставь 0, оно там не надо.
-
-*/
-
 body {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
-  font-family: -apple-system, Roboto, Helvetica, Verdana, sans-serif;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive;
+  width: 100%;
+  height: 100%;
 }
 
 /* ----------- */
 
-/* Вот тут как раз лучше типа titleContent, хотя у хедера такие же стили, можешь универсальные группы которые используются много где, выностить в отдлельный класс и у тебя уже будет styled система, но это не обязательно сейчас, но помни что в работе такое точно будет */
 .header {
   display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  height: 64px;
   background-color: #f2f2f2;
   padding: 30px 0 0 64px;
 }
 
-/* Чуть больше конкретики можно, не упарываясь, типа titleTexts, это для других больше чем для тебя, для элементов внутри контейнера не так критично, а вот сам контейнер стоит более осмысленно называть */
-.texts {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Хорошие классы для элементов хедера */
 .logo {
   margin: 0;
   font-size: 30px;
   font-weight: lighter;
+}
+
+.titleContent {
+  display: flex;
+  background-color: #f2f2f2;
+  height: calc(100% - 94px);
+}
+
+.contentTexts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 0 64px;
 }
 
 .logoBold {
@@ -48,6 +50,7 @@ body {
   line-height: 96px;
   font-weight: bold;
   width: 50%;
+  margin: auto 0;
 }
 
 .description {
@@ -65,4 +68,31 @@ body {
 .descriptionLink:hover {
   opacity: 0.5;
   transition: 0.4s;
+}
+
+/*------------*/
+.contentPics {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.image {
+  position: relative;
+  width: 765px;
+  height: 608px;
+  z-index: 2;
+}
+
+.square {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
 }

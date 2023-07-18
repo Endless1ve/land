@@ -1,0 +1,12 @@
+@import url('./square/square.css');
+@import url('./image/image.css');
+
+.contentPics {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}

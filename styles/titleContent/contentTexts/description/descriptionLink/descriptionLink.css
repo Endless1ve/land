@@ -1,0 +1,10 @@
+.descriptionLink {
+    text-decoration: none;
+    color: #2f80ed;
+    cursor: pointer;
+  }
+  
+  .descriptionLink:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+  }

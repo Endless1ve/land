@@ -1,0 +1,9 @@
+.educationDescription {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+}

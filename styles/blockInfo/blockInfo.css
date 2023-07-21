@@ -1,0 +1,9 @@
+@import url('./blockTitle/blockTitle.css');
+@import url('./blockDescription/blockDescription.css');
+@import url('./blockTable/blockTable.css');
+@import url('./blockInfo_dark.css');
+
+.blockInfo {
+    padding-top: 90px;
+    margin-bottom: 100px;
+}

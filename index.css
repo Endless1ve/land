@@ -2,10 +2,11 @@
 @import url('./styles/header/header.css');
 @import url('./styles/titleContent/titleContent.css');
 @import url('./styles/educationTroubles/educationTroubles.css');
+@import url('./styles/blockInfo/blockInfo.css');
 
 body {
   margin: 0;
-  width: 100%;
+  max-width: 100vw;
   height: 100vh;
 }
 
@@ -17,7 +18,7 @@ body {
   height: 100%;
 }
 
-.overlay {
+.titleBlock {
   display: flex;
   flex-direction: column;
   margin: 0;

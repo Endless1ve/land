@@ -1,6 +1,5 @@
 @import url('./styles/normalize.css');
-@import url('./styles/header/header.css');
-@import url('./styles/titleContent/titleContent.css');
+@import url('./styles/titleBlock/titleBlock.css');
 @import url('./styles/educationTroubles/educationTroubles.css');
 @import url('./styles/blockInfo/blockInfo.css');
 
@@ -19,16 +18,6 @@ body {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-}
-
-.titleBlock {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: "Comic Sans MS", cursive;
-  width: 100%;
-  height: 100%;
 }
 
 .boldWord {

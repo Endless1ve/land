@@ -1,0 +1,3 @@
+.blockInfo_dark .blockTable_dark {
+    grid-template-columns: repeat(5, 200px);
+}

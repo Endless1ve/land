@@ -1,0 +1,10 @@
+@import url('./educationTitle/educationTitle.css');
+@import url('./educationDescription/educationDescription.css');
+
+.educationTroubles {
+    width: 80%;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: 175px auto;
+    grid-column-gap: 50px;
+}

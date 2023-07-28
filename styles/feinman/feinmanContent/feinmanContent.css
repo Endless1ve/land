@@ -1,0 +1,6 @@
+@import url('./feinmanTexts/feinmanTexts.css');
+@import url('./feinmanLink/feinmanLink.css');
+.feinmanContent {
+    display: flex;
+    justify-content: flex-end;
+}

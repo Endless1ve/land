@@ -1,0 +1,6 @@
+@import url('./feinmanTitle/feinmanTitle.css');
+@import url('./feinmanDescription/feinmanDescription.css');
+
+.feinmanTexts {
+    margin: 0 auto;
+}

@@ -2,5 +2,11 @@
 @import url('./feinmanDescription/feinmanDescription.css');
 
 .feinmanTexts {
-    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-self: flex-start;
 }

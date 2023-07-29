@@ -1,12 +1,13 @@
 @import url('./feinmanContent/feinmanContent.css');
+@import url('./feinmanImage/feinmanImage.css');
 
 .feinman {
-    box-sizing: border-box;
-    height: 790px;
+    display: flex;
+    align-items: flex-end;
     background-color: var(--second-bg-color);
-    background-image: url('../../images/feinman.png');
-    background-repeat: no-repeat;
-    background-position: 0% 100%;
-    background-size: 100% 100% contain;
+    position: relative;
+    max-height: 790px;
+    height: 100%;
+    width: 100%;
     padding-top: 100px;
 }

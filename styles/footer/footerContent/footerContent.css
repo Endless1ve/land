@@ -1,0 +1,10 @@
+@import url('./footerCopy/footerCopy.css');
+@import url('./footerInfo/footerInfo.css');
+
+.footerContent {
+    width: 90%;
+    margin: 0 auto;
+    padding:60px 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }

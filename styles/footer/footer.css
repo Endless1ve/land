@@ -2,5 +2,6 @@
 
 .footer {
     width: 100%;
-    background-color: var(--main-bg-color);
+    display: flex;
+    background-color: #000;
   }

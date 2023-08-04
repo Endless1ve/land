@@ -1,4 +1,4 @@
 .blockInfo_dark {
-    color: white;
-    background-color: #1F1F1F;
+    color: var(--second-text-color);
+    background-color: var(--main-bg-color);
 }

@@ -3,6 +3,6 @@
 
 .titleContent {
     display: flex;
-    background-color: #f2f2f2;
+    background-color: var(--second-bg-color);
     height: 100%;
   }

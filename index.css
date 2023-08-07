@@ -3,6 +3,7 @@
 @import url('./styles/educationTroubles/educationTroubles.css');
 @import url('./styles/blockInfo/blockInfo.css');
 @import url('./styles/feinman/feinman.css');
+@import url('./styles/footer/footer.css');
 
 body {
   margin: 0;
@@ -41,4 +42,8 @@ body {
 
 .boldWord {
   font-weight: bold;
+}
+
+.logoWhite {
+  color: var(--second-text-color);
 }

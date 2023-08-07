@@ -1,0 +1,6 @@
+.educationDescription {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    margin: 0;
+}

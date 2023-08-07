@@ -1,0 +1,8 @@
+@import url('./contentTexts/contentTexts.css');
+@import url('./contentPics/contentPics.css');
+
+.titleContent {
+    display: flex;
+    background-color: var(--second-bg-color);
+    height: 100%;
+  }

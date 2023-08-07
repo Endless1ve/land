@@ -4,40 +4,179 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="https://pictures.s3.yandex.net/favicon.png">
+    <title>Научиться учиться</title>
   </head>
   <body>
-    <!-- 
-      - обертку от body лучше все равно сделать, просто в div все оберни, сровняй с экраном, так у тебя больше контроля над контентом будет.
-      - классы ок, когда будешь переходить на фреймфорк разрабатывать, там будет компонентный подход, не будет такого монолита, будет более понятно, почему классы так называются, а не по типа бэм
-      - ты в хедер весь контент объедеенил, так не надо, сделай хедер отдельно, добавим туда кнопки потом, выдели заголовок ЯендексПрактикум в отдельный компонент header, который будет находиться допустим в контейнере div с классом generalContent
-      типа так:
-      <div class="content">
+    <main class="content">
+      <section class="titleBlock">
+        <header class="header">
+          <p class="logo"><span class="boldWord">Яндекс</span> Практикум</p>
+        </header>
+
         <div class="titleContent">
-          <header />
-          <div />
+          <div class="contentTexts">
+            <h1 class="title">Научиться учиться</h1>
+            <p class="description">
+              Какие современные и эффективные подходы к обучению вы можете
+              использовать в своей жизни?
+              <a href="#" class="descriptionLink link">Узнать &rarr;</a>
+            </p>
+          </div>
+
+          <div class="contentPics">
+            <div class="square"></div>
+            <img
+              src="./images/two_again.png"
+              alt="Картина художника Фёдора Решетникова, где мальчик в очередной раз получил двойку и показывает ее своей семье, которая не рада данному факту "
+              class="image"
+            />
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="educationTroubles">
+        <p class="educationTitle">Главные проблемы в обучении</p>
+        <div class="educationDescription">
+          <p>
+            Ни в школе, ни в институте нас не учат тому, как правильно изучать
+            материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся
+            решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге
+            это не дает нам реального знания. Зубрежка быстро выветривается и не
+            приносит пользы.
+          </p>
+          <p>
+            <span class="boldWord">Вывод:</span> учиться тоже нужно уметь, но
+            почему-то этому мало где учат. Что с этим делать?
+          </p>
+          <p>
+            Конкретные техники и упражнения помогают изменить подход к обучению,
+            сделать его эффективным и захватывающим. Эти же техники применяются
+            на примере обучения в Практикуме.
+          </p>
+        </div>
+      </section>
+      <section class="blockInfo">
+        <h3 class="blockTitle">Цифры и факты</h3>
+        <p class="blockDescription">Про учёбу и мозг</p>
+        <div class="blockTable">
+          <div class="tableCell">
+            <h4 class="cellTitle">86 миллиардов</h4>
+            <p class="cellDescription">2.1 миллиарда</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">2.1 миллиарда</h4>
+            <p class="cellDescription">Число нуждающихся в повышении квалификации</p>
+            <p class="cellDescription">Всемирный Банк, 2017</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">1000 терабайт</h4>
+            <p class="cellDescription">Объём памяти человека</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">500 триллионов</h4>
+            <p class="cellDescription">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">420 миллионов</h4>
+            <p class="cellDescription">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+            <p class="cellDescription">Всемирный Банк, 2017</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">17–20 лет</h4>
+            <p class="cellDescription">Пик обучаемости</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">1885 год</h4>
+            <p class="cellDescription">Открытие кривой забывания</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">1889 год</h4>
+            <p class="cellDescription">Открытие условного рефлекса</p>
+          </div>
+        </div>
+      </section>
       
-      у тебя хедер находится не на всей странице, а только внутри главной превью страницы, его стоит выделить как описала выше, а сейчас он у тебя является вообще всей главной страницей, возможно нам потом понадобиться вынести этот хедер наружу, чтобы например прилепить его к шапке страницы и чтоб он ездил вместе со скроллом, ты как тогда будешь контент отделять? Придется все переверстывать. Нужно думать наперед что ты делаешь, реально может понадобиться что угодно, все ты не сможешь предугадать, но на таких простых вещах стоит тренироваться, ибо в работе они очень пригодятся. Думай что можно разделить сейчас, чтобы потом это не занимало вдвое больше времени.
-     -->
+      <section class="feinman">
+        <div class="feinmanTexts">
+          <h3 class="feinmanTitle">Метод Фейнмана</h3>
+          <p class="feinmanDescription">Выучить и не забыть.</p>
+        </div>
+        <a href="#" class="feinmanLink link">Подробнее &rarr;</a>
+        <img src="./images/feinman.png" alt="" class="feinmanImage">
+      </section>
 
-    <header class="header">
-      <div class="texts">
-        <p class="logo"><span class="logoBold">Яндекс</span> Практикум</p>
-        <h1 class="title">Научиться учиться</h1>
-        <p class="description">
-          Какие современные и эффективные подходы к обучению вы можете
-          использовать в своей жизни?
-          <a href="#" class="descriptionLink">Узнать &rarr;</a>
-        </p>
-      </div>
+      <section class="blockInfo blockInfo_dark">
+        <h3 class="blockTitle">Принципы обучения</h3>
+        <p class="blockDescription">от Джоша Кауфмана</p>
+        <div class="blockTable blockTable_dark">
+          <div class="tableCell">
+            <h4 class="cellTitle">1</h4>
+            <p class="cellDescription">Выберите привлекательный проект.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">2</h4>
+            <p class="cellDescription">Сосредоточьтесь на каком-то одном навыке.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">3</h4>
+            <p class="cellDescription">Определите целевой уровень мастерства.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">4</h4>
+            <p class="cellDescription">Разбейте навык на элементы.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">5</h4>
+            <p class="cellDescription">Приготовьте всё необходимое для занятий.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">6</h4>
+            <p class="cellDescription">Устраните препятствия для занятий.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">7</h4>
+            <p class="cellDescription">Выделите специальное время для занятий.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">8</h4>
+            <p class="cellDescription">Создайте быстрые петли обратной связи.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">9</h4>
+            <p class="cellDescription">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+          </div>
+          <div class="tableCell">
+            <h4 class="cellTitle">10</h4>
+            <p class="cellDescription">Уделяйте внимание количеству и скорости.</p>
+          </div>
+        </div>
+      </section>
 
-      <div class="contentPics">
-        <div class="square"></div>
-        <img src="" alt="Картинка" class="image" />
-      </div>
-    </header>
+      <footer class="footer">
+        <div class="footerContent">
+          <div class="footerCopy">
+            <p class="logo logoWhite"><span class="boldWord">Яндекс</span> Практикум</p>
+            <p class="copyText">&copy; 2023. Артём</p>
+          </div>
+          <div class="footerInfo">
+            <p class="footerHeading">О Практикуме</p>
+            <div class="footerLinks">
+              <a href="#" class="footerLink link">Главная</a>
+              <a href="#" class="footerLink link">Концепция</a>
+              <a href="#" class="footerLink link">Наставники</a>
+            </div>
+          </div>
+          <div class="footerInfo">
+            <p class="footerHeading">Соцсети</p>
+            <div class="footerLinks">
+              <a href="#" class="footerLink link"><img src="./images/facebook_white.svg" alt="facebook" class="linkImg"> Facebook</a>
+              <a href="#" class="footerLink link"><img src="./images/vk_white.svg" alt="vk" class="linkImg"> ВКонтакте</a>
+              <a href="#" class="footerLink link"><img src="./images/instagram_white.svg" alt="instagram" class="linkImg"> Instagram</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

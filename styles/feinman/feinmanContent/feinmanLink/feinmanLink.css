@@ -1,0 +1,8 @@
+.feinmanLink {
+    position: absolute;
+    right: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    color: var(--main-text-color);
+}
